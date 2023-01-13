@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles/global.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+            rel="stylesheet"
+        />
+        <title>Binary Search Tree Simulator</title>
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <div class="logo">
+                    <img
+                        src="./public/adani-logo.png"
+                        alt="Logo Adani University"
+                    />
+                </div>
+                <h1>Binary Search Tree Simulator</h1>
+                <form
+                    name="form"
+                    onsubmit="addEventListener('submit',(e)=> e.preventDefault())"
+                >
+                    <input
+                        id="value"
+                        value="0"
+                        min="0"
+                        step="1"
+                        type="number"
+                        name="node"
+                        placeholder="Insert a node"
+                    />
+                    <div class="button-group">
+                        <input
+                            type="button"
+                            onclick="insertNode()"
+                            name="insert"
+                            value="Insert"
+                        />
+                        <input
+                            type="button"
+                            onclick="deleteNode()"
+                            name="delete"
+                            value="Delete"
+                        />
+                        <input
+                            type="button"
+                            onclick="searchNode()"
+                            name="search"
+                            value="Search"
+                        />
+                    </div>
+                </form>
+            </header>
+            <main></main>
+            <footer>
+                <div class="description">
+                    <h3>Description</h3>
+                    <p>
+                        This is a Binary Search Tree simulator which one can use
+                        to teach the concept of insertion, deletion and
+                        searching of numbers in a Binary Tree.
+                    </p>
+                </div>
+            </footer>
+        </div>
+        <script src="scripts/p5.min.js"></script>
+        <script type="text/javascript" src="scripts/BinaryTree.js"></script>
+        <script type="text/javascript" src="scripts/Node.js"></script>
+        <script type="text/javascript" src="scripts/sketch.js"></script>
+    </body>
+</html>
